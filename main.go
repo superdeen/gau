@@ -32,7 +32,7 @@ func run(config *providers.Config, domains []string) {
 			providerList = append(providerList, otx)
 		case "urlscan":
 			urlscan := providers.NewurlscanProvider(config)
-			providerList = append(providerList, otx)
+			providerList = append(providerList, urlscan)
 		case "commoncrawl":
 			common, err := providers.NewCommonProvider(config)
 			if err == nil {
